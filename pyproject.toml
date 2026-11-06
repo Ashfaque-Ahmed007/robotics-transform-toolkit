@@ -1,0 +1,23 @@
+[project]
+name = "robotics-transform-toolkit"
+version = "0.1.0"
+description = "A Python toolkit for 3D robotics transformations"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.2.6",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "robotics_transform"
+module-root = "src"
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.10.9",
+    "pytest>=9.2.0",
+]
